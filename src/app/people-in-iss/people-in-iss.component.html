@@ -1,0 +1,12 @@
+<div class="block-information__people">
+  <ul>
+    <li *ngFor="let man of people">
+      <div class="block-information__people-elem">
+        <img src="../../assets/img/man.png" alt="">
+        <p>{{man.name}}</p>
+      </div>
+    </li>
+  </ul>
+  <hr>
+  <p>Total amount: {{countPeople}} people on ISS</p>
+</div>

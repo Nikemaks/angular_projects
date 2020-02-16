@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+- 10
+
+before_install:
+- npm install -g @angular/cli
+install: npm install
+
+branches:
+ only:
+  - master
+
+deploy:
+ provider: heroku
+ app: app-iss
+ api_key:
+  secure : '07091a41-cd16-487e-8213-381d3063337a'

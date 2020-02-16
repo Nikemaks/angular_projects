@@ -1,0 +1,15 @@
+<div class="block-location__cordinate-text">
+  <b>ISS is now located:</b>
+  <p>longitude: {{longitude}}, latitude: {{latitude}}</p>
+</div>
+<div class="block-location__cordinate-map">
+  <agm-map
+    class = "map"
+    [latitude]="latitude"
+    [longitude]="longitude"
+    [zoom]="zoom" >
+    <agm-marker
+      [latitude]="latitude"
+      [longitude]="longitude"></agm-marker>
+  </agm-map>
+</div>

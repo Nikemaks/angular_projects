@@ -1,0 +1,27 @@
+.block-information__people {
+  border: 1px solid black;
+  margin: 20px 0 0;
+  p {
+    padding: 10px;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      list-style: none;
+      border: 1px solid black;
+      margin: 10px;
+      border-radius: 15px;
+      img {
+        width: 40px;
+        height: 40px;
+        vertical-align: middle;
+      }
+    }
+  }
+  &-elem {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+}
